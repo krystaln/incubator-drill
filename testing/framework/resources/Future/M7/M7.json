@@ -1,0 +1,36 @@
+{
+    "testId": "M7",
+    "type": "group",
+    "description": "Test M7 queries via jdbc",
+    "categories": [
+        "smoke"
+    ],
+    "matrices": [
+        {
+            "query-file": ".*.q",
+            "schema": "M7",
+            "output-format": "tsv",
+            "expected-file": ".*.e_tsv",
+            "verification-type": [
+                "in-memory"
+            ]
+        }
+    ],
+    "datasources": [
+       {
+           "mode": "cp",
+           "src": "Datasources/M7/studenttab",
+           "dest": "/drill/testdata/M7"
+       },
+       {
+           "mode": "cp",
+           "src": "Datasources/M7/votertab",
+           "dest": "/drill/testdata/M7"
+       },
+       {
+           "mode": "gen",
+           "src": "Datasources/M7/M7.sh",
+           "dest": ""
+       }
+   ]
+}
