@@ -1,1 +1,1 @@
-select sum(cast(threecf['contributions'] as decimal(6,2))) from m7voter;
+select sum(cast(m7voter.threecf.contributions as decimal(6,2))) from m7voter;

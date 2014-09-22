@@ -1,1 +1,1 @@
-select max(cast(fourcf['create_date'] as timestamp)) from voter;
+select max(cast(voter.fourcf.create_date as timestamp)) from voter;

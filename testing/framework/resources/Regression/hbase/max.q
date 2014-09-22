@@ -1,1 +1,1 @@
-select max(cast(twocf['age'] as integer)) from voter;
+select max(cast(voter.twocf.age as integer)) from voter;

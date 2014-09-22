@@ -1,1 +1,1 @@
-select avg(cast(threecf['contributions'] as float)) from voter;
+select avg(cast(voter.threecf.contributions as float)) from voter;

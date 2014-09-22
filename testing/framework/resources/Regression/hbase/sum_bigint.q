@@ -1,1 +1,1 @@
-select sum(cast(fourcf['studentnum'] as bigint)) from student;
+select sum(cast(student.fourcf.studentnum as bigint)) from student;

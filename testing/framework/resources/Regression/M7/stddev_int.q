@@ -1,1 +1,1 @@
-select stddev(cast(twocf['age'] as integer)) from m7voter where twocf['age'] > 30;
+select stddev(cast(m7voter.twocf.age as integer)) from m7voter where m7voter.twocf.age > 30;
